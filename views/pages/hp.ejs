@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+        <style>
+            body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, rgb(9, 9, 121) 0%,rgba(9,9,121) 35% ,rgba(0,212,255,1) 100%);
+  
+}
+.wrapper{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+}
+.box div{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 6px solid  rgba(255,255,255,0.8);
+}
+.box div:nth-child(1){
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+
+}
+.box div:nth-child(2){
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+  
+}
+.box div:nth-child(3){
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+  
+}
+.box div:nth-child(4){
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+  
+}
+.box div:nth-child(5){
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+  
+}
+.box div:nth-child(6){
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+  
+}
+.box div:nth-child(7){
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+  
+}
+.box div:nth-child(8){
+  top: 35%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+  
+}
+.box div:nth-child(9){
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+  
+}
+.box div:nth-child(10){
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+  
+}
+@keyframes animate{
+    0%{
+      transform: scale(0) translateY(0) rotate(0);
+      opacity: 1;
+    }
+    100%{
+      transform: scale(1.3) translateY(-90px) rotate(360deg);
+      opacity:0
+}
+}
+            #one
+            {
+                height:70px;
+                background-color: rgba(9,9,121);
+            }
+            #t{
+                color:white;
+                margin-top: 20px;
+            }
+            a{
+                color:black;
+                text-decoration: none;
+                margin-right:60px ;
+                border-radius:10px;
+                background-color:transparent;
+            }
+            #two
+            {
+                text-align: center;
+                float: left;
+                width: 27%;
+                height:70px;
+            }
+            #three
+            {
+                text-align: center;
+                float:right;
+                width:45%;
+                height: 70px;
+                line-height:70px;
+                
+            } 
+.content{
+    color:white;
+    position: absolute;
+    margin-top: 120px;
+    left:50%;   
+}
+h1{
+    font-size: 80px;
+    margin:10px 0 ;
+    line-height: 40px;
+}
+#home{
+    margin-top: 30%;
+    margin-left: 8%;
+    width:70%;
+    color:white;
+} 
+#about{
+    margin-top:30%;
+    margin-left: 8%;
+    width:70%;
+    color:white
+
+}  
+span a {
+	font-size: 18px;
+	color: #cccccc;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: all 0.4s ease-in-out;	
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.avatar {
+	width: 350px;
+	height: 350px;
+	box-sizing: border-box;
+	/* border: 5px white solid; */
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 10s ease-in-out infinite;
+  margin-top: -133px;
+  
+}
+	.avatar img { 
+        width: 100%;
+        height: 100%; 
+    }
+ .suppoprt-me {
+	display: inline-block;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	width: 20vw;
+	max-width: 250px;
+	min-width: 200px; 	z-index: 9;
+}
+ </style> 
+    </head>
+    <body>
+        <form action="/home" method="get">
+        <div id="one">
+            <div id="two">
+                <h2 id="t">
+                    <i> DOCKET </i>
+                </h2>
+            </div>
+            <div id="three" >
+                    <a href="/about" style="color:white">About</a>
+                    <a href="/login" style="color:white">Login</a>
+                    <a href="/register" style="color:white">Sign-in</a> 
+                    <a href="/d-info" style="color:white"> developer's-info</a> 
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="content">
+              <h2>welcome to </h2><br>
+              <h1><i>DOCKET WEBSITE</i></h1><br>
+              <h3 style="float:right">- Get all Your Works Done</h3>
+            </div>
+            <div class="container">
+              <div class="avatar">
+                      <img src="https://blog.trello.com/hs-fs/best-productive-morning-routines-1.png" alt="Skytsunami" />
+                  </a>
+              </div>
+            
+    </form>
+</body>
+</html>
